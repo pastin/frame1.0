@@ -10,6 +10,9 @@ Vue.use(ElementUi)
 // 引入mockjs
 import mockdata from './mock/index.js';
 
+// 引入store
+import store from './store/index.js';
+
 // 引入vue-router
 import VueRouter from 'vue-router'
 import routeConfig from './router-config.js'
@@ -22,7 +25,8 @@ const router = new VueRouter({
 
 
 new Vue({
-  router,
   el: '#app',
+  router,
+  store, //在全局注入, 任意组件可使用 this.$store
   render: h => h(App)
 })

@@ -38,7 +38,7 @@
             </template>
             <el-menu-item-group>
               <el-menu-item index="/echarts">echarts</el-menu-item>
-              <el-menu-item index="2-2">选项2</el-menu-item>
+              <el-menu-item index="/vuex">vuex demo</el-menu-item>
             </el-menu-item-group>
            
           </el-submenu>
